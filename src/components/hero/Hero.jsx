@@ -122,6 +122,7 @@ const Hero = () => {
           </div>
         </div>
         <BodyCircle />
+
         {/* <Background>
           <div className="background-circle">
             <div className="right  top-5 flex-1 flex items-center justify-center md:items-end sm:items-end">

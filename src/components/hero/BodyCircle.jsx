@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 const BodyCircle = () => {
   const calculateRotation = (i) => {
-    return `rotateY(calc(${i} * calc(360deg / 10))) translateZ(300px)`;
+    return `rotateY(calc(${i} * calc(360deg / 15))) translateZ(350px)`;
   };
   return (
     <BODYCIRCLE>
@@ -10,75 +10,66 @@ const BodyCircle = () => {
         <div class="hoodie-guy-animation-class">
           <div class="hoodie-guy"></div>
           <div className="circle">
-            {Array.from({ length: 10 }, (_, i) => (
-              <div key={i} style={{ transform: calculateRotation(i + 1) }}>
+            {Array.from({ length: 15 }, (_, i) => (
+              <span key={i} style={{ transform: calculateRotation(i + 1) }}>
                 <img
                   className="bg-black rounded-full circle-text"
                   src="https://img.icons8.com/color/48/html-5--v1.png"
-                  height="25px"
                   alt="icon"
                 />
                 <img
                   className="bg-black rounded-full circle-text "
                   src="https://img.icons8.com/color/48/css3.png"
-                  height="25px"
                   alt="icon"
                 />
                 <img
                   className="bg-black rounded-full  circle-text "
                   src="https://img.icons8.com/color/48/null/javascript--v1.png"
-                  height="25px"
                   alt="icon"
                 />
                 <img
                   className="bg-black rounded-full  circle-text"
                   src="https://img.icons8.com/fluency/48/typescript--v1.png"
-                  height="25px"
                   alt="icon"
                 />
                 <img
                   className="bg-black rounded-full  circle-text"
                   src="https://img.icons8.com/color/48/react-native.png"
-                  height="25px"
                   alt="icon"
                 />
                 <img
                   className="bg-black rounded-full  circle-text"
                   src="https://img.icons8.com/fluency/48/tailwind_css.png"
-                  height="75px"
                   alt="icon"
                 />
                 <img
                   className="bg-black rounded-full circle-text "
                   src="https://img.icons8.com/fluency/48/nextjs.png"
-                  height="75px"
                   alt="icon"
                 />
                 <img
                   className="bg-black rounded-full circle-text "
                   src="https://img.icons8.com/color/48/null/nodejs.png"
-                  height="75px"
                   alt="icon"
                 />
                 <img
                   className="bg-black rounded-full circle-text "
                   src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/24/null/external-mongodb-a-cross-platform-document-oriented-database-program-logo-shadow-tal-revivo.png"
-                  height="75px"
                   alt="icon"
+                  height="50px"
+                  width="50px"
                 />
                 <img
                   className="bg-black rounded-full circle-text "
                   src="https://img.icons8.com/fluency/48/mysql-logo.png"
-                  height="75px"
                   alt="icon"
                 />
                 <img
                   className="bg-black rounded-full circle-text "
                   src="https://img.icons8.com/fluency/48/prisma-orm.png"
-                  height="75px"
                   alt="icon"
                 />
-              </div>
+              </span>
             ))}
           </div>
 
@@ -99,7 +90,7 @@ const BODYCIRCLE = styled.div`
   .background-circle {
     background-image: url(/assets/portalRM.png);
     background-position: center;
-    /* background-size: cover; */
+    background-size: cover;
     /* background: #28292d; */
     border-radius: 50%;
     width: 550px;
@@ -121,11 +112,10 @@ const BODYCIRCLE = styled.div`
 
   .circle {
     position: relative;
-    display: flex;
-    top: 400px;
-    left: 220px;
-    width: 200px;
-    height: 200px;
+    top: 300px;
+    left: 200px;
+    width: 150px;
+    height: 150px;
     transform-style: preserve-3d;
     animation: animateCircle 40s linear infinite;
   }
@@ -142,12 +132,12 @@ const BODYCIRCLE = styled.div`
   }
 
   .circle span {
-    display: flex;
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100px;
-    height: 100px;
+    width: 25px;
+    height: 25px;
     /* background-color: #2d2e32; */
     /* box-shadow: 0px 0px 5px #00000080; */
     border-radius: 50%;
