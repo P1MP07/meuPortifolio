@@ -95,6 +95,7 @@ const BODYCIRCLE = styled.div`
     border-radius: 50%;
     width: 550px;
     height: 550px;
+    margin-top: 55px;
     z-index: 9;
     /* box-shadow: 0 0 20px #00000080; */
   }
@@ -104,7 +105,7 @@ const BODYCIRCLE = styled.div`
     background: url(/assets/photoperfil.png);
     /* background-position: center; */
     background-size: cover;
-    top: 100px;
+    top: 130px;
     height: 600px;
     width: 600px;
     background-size: cover;
@@ -113,7 +114,7 @@ const BODYCIRCLE = styled.div`
   .circle {
     position: relative;
     top: 300px;
-    left: 200px;
+    left: 225px;
     width: 150px;
     height: 150px;
     transform-style: preserve-3d;
