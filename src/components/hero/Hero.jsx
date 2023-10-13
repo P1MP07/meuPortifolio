@@ -4,11 +4,11 @@ import {
   AiFillInstagram,
   AiFillTwitterCircle,
 } from "react-icons/ai";
-import { FaFacebook, FaLinkedinIn, FaPlay } from "react-icons/fa";
+import { FaFacebook, FaLinkedinIn } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
 import { TypeAnimation } from "react-type-animation";
-import styled from "styled-components";
 import ResumePDF from "../../Resume.pdf";
+import BodyCircle from "./BodyCircle";
 
 const Hero = () => {
   return (
@@ -121,8 +121,8 @@ const Hero = () => {
             </ul>
           </div>
         </div>
-        {/* <BodyCircle /> */}
-        <Background>
+        <BodyCircle />
+        {/* <Background>
           <div className="background-circle">
             <div className="right  top-5 flex-1 flex items-center justify-center md:items-end sm:items-end">
               <div className="relative h-[88%] w-fit flex items-center sm:items-end">
@@ -145,12 +145,14 @@ const Hero = () => {
                       alt="mine"
                     />
                     <FaPlay className=" text-black absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Background>
+                    {/* absolute top-[50%] left-[50%] translate-x-[-50%]
+                    translate-y-[-50%] */}
+        {/* </div> */}
+        {/* </div> */}
+        {/* </div> */}
+        {/* </div> */}
+        {/* </div> */}
+        {/* </Background> */}
       </div>
     </div>
   );
@@ -158,17 +160,17 @@ const Hero = () => {
 
 export default Hero;
 
-const Background = styled.div`
-  .background-circle {
-    background-image: url(/assets/portalRM.png);
-    border-radius: 50%;
-    width: 550px;
-    height: 550px;
-    /* z-index: 9; */
-    /* box-shadow: 0 0 20px #00000080; */
-    /* padding: 10px 10px; */
-    margin-top: 30px;
-    background-position: center;
-    background-size: cover;
-  }
-`;
+// const Background = styled.div`
+//   .background-circle {
+//     background-image: url(/assets/portalRM.png);
+//     border-radius: 50%;
+//     width: 550px;
+//     height: 550px;
+//     /* z-index: 9; */
+//     /* box-shadow: 0 0 20px #00000080; */
+//     /* padding: 10px 10px; */
+//     margin-top: 30px;
+//     background-position: center;
+//     background-size: cover;
+//   }
+// `;
